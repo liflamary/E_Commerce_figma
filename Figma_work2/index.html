@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <section class="first-header">
+            <div class="row first-row" >
+                <div class="about-row">
+                    <p>About Us</p>
+                    <span style="margin-left:5px;">|</span>
+                    <p>My Account</p><span style="margin-left:5px;">|</span>
+                    <p>Wishlist</p><span style="margin-left:5px;">|</span>
+                    <p>Order Tracking</p>
+    
+                </div>
+                <div>
+                    <p>100% Secure delivery without contacting the courier</p>   
+                </div>
+                <div class="call-row">
+                    <p>Need help? Call Us : </p><span style="color:#3BB77E;font-size:13px;margin-right:10px;">+1800 900</span>
+                    <select>
+                        <option value="" style="color:#7e7e7e;">English</option>
+                    </select>
+                    <select>
+                        <option value="" style="color:#7e7e7e;">USD</option>  
+                    </select>
+                    
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="second-header">
+       <div class="row" style="display:flex;">
+        <img src="images/logo.jpeg" style="margin-left:20px;">
+        <!-- <div class="display:flex;"> -->
+            <select class="allcategories"> 
+                <option value="">All Categories</option>
+            </select>
+            <input  type="text" placeholder="Search for Items" class="allcategory">
+        <!-- </div> -->
+        <button>
+            <i class="fa fa-search"></i>
+        </button>
+        <div class="location">
+            <i class="fa fa-map-marker"></i>
+            <select style="border:none;color:#3BB77E;">
+                <option value="Your Location" class="yourlocation">
+                    Your Location
+                </option>
+            </select>
+        </div>
+        <p style="display:flex;">
+            <i class="fa fa-recycle"></i>Compare
+        </p>
+        <p>
+            <i class="fa fa-heart-o"></i>Wishlist
+        </p>
+        <p>
+            <i class="fa fa-shopping-cart"></i>Cart 
+        </p>
+        <p>
+            <i class="fa fa-user"></i> Account
+        </p>
+        
+
+       </div>
+    </section> 
+    <section class="third-header">
+            <div class="third-header-row">
+                <div style="display:flex;">
+                    <select><option value=""style="padding:10px;"><span><i class="fa-solid fa-bars"></i>Browse All Categories</span></option></select>
+                <ul>
+                <li style="margin-left:30px;">Deals</li>
+                <li style="color:#3BB77E;">Home<i class="fa fa-caret-down"></i></li>
+                <li>About</li>
+                <li>Shop<i class="fa fa-caret-down"></i></li>
+                <li>Vendors<i class="fa fa-caret-down"></i></li>
+                <li>Mega Menu<i class="fa fa-caret-down"></i></li>
+                <li>Blog<i class="fa fa-caret-down"></i></li>
+                <li>Pages<i class="fa fa-caret-down"></i></li>
+                <li>Contact</li>
+                </ul>
+                </div>
+                <div style="text-align:left;margin-top:10px;">
+                    <i class='fas fa-headset' style="margin-right:2px;"></i><span style="color:#3BB77E;">1900-888</span>
+                    <p style="font-size:12px;margin-left:15px;">24/7 Support Center</p>
+                </div>
+            </div>
+            
+    </section>
+    <section class="fourth-header">
+        <div style="display:flex;margin:20px;">
+            <div style="width:20%" >
+                <div class="category">
+                    <h3>Category</h3>
+            <ul>
+                <li>Milk and Diaries 
+                    <!-- <span class="one">3</span> -->
+                </li>
+                <li>Clothing 
+                    <!-- <span class="one">3</span> -->
+                </li>
+                <li>Pet Foods 
+                    <!-- <span class="one">3</span> -->
+                </li>
+                <li>Baking Material 
+                    <!-- <span class="one">3</span> -->
+                </li>
+                <li>Fresh Fruit 
+                    <!-- <span class="one">3</span> -->
+                </li>
+            </ul>
+                </div>
+                <div class="category1">
+                    <h3>Fill By Price</h3>
+                    <input type="range" id="vol" name="vol" min="0" max="50" style="color:#3BB77E">
+                    <span>From:<span style="color:#3BB77E">$500</span>
+                    <span style="padding-left:30px;">To:<span  style="color:#3BB77E">$1,000</span>
+                    <p>Colors</p>
+                    <input type="checkbox"><span style="color:#7e7e7e;">Red(56)</span><br>
+                    <input type="checkbox"><span style="color:#7e7e7e;">Green(78)</span><br>
+                    <input type="checkbox"><span style="color:#7e7e7e;">Blue(54)</span>
+                    <p>Item Condition</p>
+                    <input type="checkbox"><span style="color:#7e7e7e;">Item(1504)</span><br>
+                    <input type="checkbox"><span style="color:#7e7e7e;">Refurbished(78)</span><br>
+                    <input type="checkbox"><span style="color:#7e7e7e;">Used(54)</span>
+                    <div style="display:flex;">
+                        <button class="filter"><span style="color:#fff;">Filter</span></button>
+                        <img src="images/cabbage.png" style="width:100px;margin-right:0px !important;">
+                    </div>
+                </div>
+                <div class="category1">
+                    <h3>New Products</h3>
+                    <div style="display:flex;margin:10px;">
+                        <img src="images/product1.jpeg" style="width:100px;margin-right:0px !important;">
+                        <div class="categ">
+                            <p class="para">Chen Cardigen</p>
+                            <p class="para1">$29.67</p>
+                            <p class="para1">
+                                <span class="fa fa-star checked" style="color:orange"></span>
+                            </p>
+                            <p>By NestFood</p>
+                            <div>
+                                <p></p>
+                                <p></p>    
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:flex;margin:10px;">
+                        <img src="images/product2.jpeg" style="width:100px;margin-right:0px !important;">
+                        <div class="categ">
+                            <p class="para">Chen Cardigen</p>
+                            <p class="para1">$29.67</p>
+                            <p class="para1">
+                                <span class="fa fa-star checked" style="color:orange"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display:flex;margin:10px;">
+                        <img src="images/product3.jpeg" style="width:100px;margin-right:0px !important;">
+                        <div class="categ">
+                            <p class="para">Chen Cardigen</p>
+                            <p class="para1">$29.67</p>
+                            <p class="para1">
+                                <span class="fa fa-star checked" style="color:orange"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div class="container" style="background-image: url(images/background.png);
+            width:100%;
+            border-radius:20px;
+            margin-left:20px;
+            height:400px;">
+              <h2>Don't miss amazing <br>grocery deals</h2> 
+              <p class="newsletter">Sign up for the daily newsletter</p>
+              <input  type="text" placeholder="Your email address" class="allcat">
+              <button>
+                  <span style="color:#fff;">Subscribe</span>
+              </button>  
+
+              <section class="products">
+                <div class="row">
+                 <h3>Popular Products</h3>
+                 <div class="product-tab">
+                     <p style="color:#3BB77E;">All</p>
+                     <p>Milks & Dairies</p>
+                     <p>Coffee & Teas</p>
+                     <p>Pet Foods</p>
+                     <p>Meats</p>
+                     <p>Vegetables</p>
+                     <p>Fruits</p>
+                 </div>
+                </div>
+             </section>
+             <section class= "product-list">
+                <div class="row" style="display:flex;justify-content:center;align-items: center;">
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;border-radius:10px;">
+                        <img src="images/pro1.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;border-radius:10px;">
+                        <img src="images/pro2.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;border-radius:10px;">
+                        <img src="images/pro3.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;border-radius:10px;">
+                        <img src="images/pro4.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;border-radius:10px;">
+                        <img src="images/pro5.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="row" style="display:flex;justify-content:center;align-items: center;margin-top:20px;">
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;margin-bottom:0;border-radius:10px;">
+                        <img src="images/pro6.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;margin-bottom:0;border-radius:10px;">
+                        <img src="images/pro7.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;margin-bottom:0;border-radius:10px;">
+                        <img src="images/pro8.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;margin-bottom:0;border-radius:10px;">
+                        <img src="images/pro9.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+                    </div>
+                    <div style="margin:20px;border:1px solid #ececec;padding:10px;margin-top:5px;margin-bottom:0;border-radius:10px;">
+                        <img src="images/pro10.jpeg" style="width:100px;margin-right:0px !important;">
+                        <p style="color:#ADADAD;">Snack</p>
+                        <p>Seeds of change Organic Quince</p>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <span class="fa fa-star checked" style="color:orange"></span>
+                            <p>(4.0)</p>
+                        </div>
+                        <div style="display:flex;margin-top:5px;">
+                            <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                            <p>$28.85</p>
+                            <p>$35.78</p>
+                            <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+             </section>
+             <section >
+                <h3 style="font-family:'Quicksand';
+                font-weight:
+                700;
+                font-size:
+                32px">Deals of the Day!</h3>
+
+                <div class="row" style="display:flex;justify-content:center;align-items: center;">
+                    <div class="col-md-3" style="margin:10px;">
+                        <img src="images/deal1.png" style="width:100%;border-radius:10px;">
+                        <div class="product-para1">
+                            <div class="row" style="display:flex;position:relative;top:-150px;">
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>426</p>
+                                    <p>Days</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>08</p>
+                                    <p>Hours</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>17</p>
+                                    <p>Mins</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>77</p>
+                                    <p>Sec</p>
+                                </div>
+                                
+                            </div>
+                            <div style="margin:20px;border:1px solid #ececec;background-color:#fff;padding:10px;top:-150px;border-radius:10px;position:relative;">
+                                <p style="color:#ADADAD;">Snack</p>
+                                <p>Seeds of change Organic Quince</p>
+                                
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <span class="fa fa-star checked" style="color:orange"></span>
+                                    <p>(4.0)</p>
+                                </div>
+                                <div style="display:flex;margin-top:5px;">
+                                    <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                                </div>
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <p>$28.85</p>
+                                    <p>$35.78</p>
+                                    <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                                </div>
+        
+                            </div>
+                        
+                       </div>
+
+                    </div>              
+                    <div class="col-md-3" style="margin:10px;">
+                        <img src="images/deal2.png" style="width:100%;border-radius:10px;">
+                        <div class="product-para1">
+                            <div class="row" style="display:flex;position:relative;top:-150px;">
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>426</p>
+                                    <p>Days</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>08</p>
+                                    <p>Hours</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>17</p>
+                                    <p>Mins</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>77</p>
+                                    <p>Sec</p>
+                                </div>
+                                
+                            </div>
+                            <div style="margin:20px;border:1px solid #ececec;background-color:#fff;padding:10px;top:-150px;border-radius:10px;position:relative;">
+                                <p style="color:#ADADAD;">Snack</p>
+                                <p>Seeds of change Organic Quince</p>
+                                
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <span class="fa fa-star checked" style="color:orange"></span>
+                                    <p>(4.0)</p>
+                                </div>
+                                <div style="display:flex;margin-top:5px;">
+                                    <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                                </div>
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <p>$28.85</p>
+                                    <p>$35.78</p>
+                                    <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                                </div>
+        
+                            </div>
+                        
+                       </div>
+
+                    </div> 
+                    <div class="col-md-3" style="margin:10px;">
+                        <img src="images/deal3.png" style="width:100%;border-radius:10px;">
+                        <div class="product-para1">
+                            <div class="row" style="display:flex;position:relative;top:-150px;">
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>426</p>
+                                    <p>Days</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>08</p>
+                                    <p>Hours</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>17</p>
+                                    <p>Mins</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>77</p>
+                                    <p>Sec</p>
+                                </div>
+                                
+                            </div>
+                            <div style="margin:20px;border:1px solid #ececec;background-color:#fff;padding:10px;top:-150px;border-radius:10px;position:relative;">
+                                <p style="color:#ADADAD;">Snack</p>
+                                <p>Seeds of change Organic Quince</p>
+                                
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <span class="fa fa-star checked" style="color:orange"></span>
+                                    <p>(4.0)</p>
+                                </div>
+                                <div style="display:flex;margin-top:5px;">
+                                    <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                                </div>
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <p>$28.85</p>
+                                    <p>$35.78</p>
+                                    <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                                </div>
+        
+                            </div>
+                        
+                       </div>
+
+                    </div>  
+                    <div class="col-md-3" style="margin:10px;">
+                        <img src="images/deal4.png" style="width:100%;border-radius:10px;">
+                        <div class="product-para1">
+                            <div class="row" style="display:flex;position:relative;top:-150px;">
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>426</p>
+                                    <p>Days</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>08</p>
+                                    <p>Hours</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>17</p>
+                                    <p>Mins</p>
+                                </div>
+                                <div style="background-color:#fff;margin:5px;padding:10px;">
+                                    <p>77</p>
+                                    <p>Sec</p>
+                                </div>
+                                
+                            </div>
+                            <div style="margin:20px;border:1px solid #ececec;background-color:#fff;padding:10px;top:-150px;border-radius:10px;position:relative;">
+                                <p style="color:#ADADAD;">Snack</p>
+                                <p>Seeds of change Organic Quince</p>
+                                
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <span class="fa fa-star checked" style="color:orange"></span>
+                                    <p>(4.0)</p>
+                                </div>
+                                <div style="display:flex;margin-top:5px;">
+                                    <p>By</p><span style="color:#3BB77E;">NestFood</span>
+                                </div>
+                                <div style="display:flex;justify-content: space-between;margin-top:5px;">
+                                    <p>$28.85</p>
+                                    <p>$35.78</p>
+                                    <p style="background-color:#DEF9EC;padding:5px;"><i class="fa fa-shopping-cart" style="color:#3BB77E;"></i><span style="color:#3BB77E;">Add</span></p>
+                                </div>
+        
+                            </div>
+                        
+                       </div>
+
+                    </div> 
+                </div> 
+             </section>
+             <section style="margin:20px;margin-bottom:50px;">
+                <div class="row" style="display:flex;justify-content:center;align-items: center;">
+                    <div class="col-md-4" style="padding:10px;margin:5px;">
+                        <img src="images/shop1.png" style="width:100%;border-radius:10px;">
+                        <div class="product-para">
+                        <h4>Everyday Fresh & Clean with Our Products</h4>
+                        <button class="shopnow"><span style="color:#fff;">SHOP NOW</span></button>
+                       </div>
+
+                    </div>           
+                    <div class="col-md-4" style="padding:10px;margin:5px;">
+                        <img src="images/shop2.png" style="width:100%;border-radius:10px;">
+                        <div class="product-para">
+                        <h4>Everyday Fresh & Clean with Our Products</h4>
+                        <button class="shopnow"><span style="color:#fff;">SHOP NOW</span></button>
+                       </div>
+
+                    </div>   
+                    <div class="col-md-4" style="padding:10px;margin:5px;">
+                        <img src="images/shop3.png" style="width:100%;border-radius:10px;">
+                       <div class="product-para">
+                        <h4>Everyday Fresh & Clean with Our Products</h4>
+                        <button class="shopnow"><span style="color:#fff;">SHOP NOW</span></button>
+                       </div>
+
+                    </div>   
+                    
+                
+                </div> 
+             </section>
+
+
+            </div>
+
+            
+
+            
+        </div>
+    </section>
+    
+</body>
+</html>
